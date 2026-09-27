@@ -1,0 +1,1188 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perth Roof & Exterior Maintenance | Roofing & Property Maintenance</title>
+
+    <meta name="description" content="Professional roof and exterior maintenance services across Perth, Western Australia. Roof maintenance, pressure cleaning, gutters, exterior cleaning and property maintenance.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #202522;
+            background: #f5f6f3;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        /* TOP BAR */
+
+        .topbar {
+            background: #202522;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: white;
+            border-bottom: 1px solid #e5e7e4;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-inner {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #557a45;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #557a45;
+        }
+
+        .nav-button {
+            background: #557a45;
+            color: white !important;
+            padding: 12px 19px;
+            border-radius: 4px;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background:
+                linear-gradient(rgba(25, 30, 27, 0.72), rgba(25, 30, 27, 0.72)),
+                url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=85")
+                center/cover;
+        }
+
+        .hero-content {
+            max-width: 720px;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            border-left: 4px solid #7fa96a;
+            padding-left: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(46px, 7vw, 78px);
+            line-height: 0.98;
+            letter-spacing: -3px;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 610px;
+            font-size: 18px;
+            color: #e7e9e6;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 23px;
+            border-radius: 4px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .button-primary {
+            background: #6f965b;
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #5d824b;
+        }
+
+        .button-light {
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+        }
+
+        .button-light:hover {
+            background: white;
+            color: #202522;
+        }
+
+        /* INTRO STRIP */
+
+        .intro-strip {
+            background: #557a45;
+            color: white;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .intro-item {
+            padding: 27px 25px;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .intro-item:last-child {
+            border-right: none;
+        }
+
+        .intro-item strong {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        .intro-item span {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-heading {
+            max-width: 680px;
+            margin-bottom: 50px;
+        }
+
+        .section-heading .small-title {
+            color: #557a45;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(34px, 5vw, 52px);
+            line-height: 1.05;
+            letter-spacing: -1.5px;
+            margin-bottom: 18px;
+        }
+
+        .section-heading p {
+            color: #66706a;
+            font-size: 17px;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: #ffffff;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .service-card {
+            padding: 34px;
+            background: #f5f6f3;
+            border: 1px solid #e3e6e1;
+            min-height: 240px;
+            position: relative;
+            transition: 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: #557a45;
+        }
+
+        .service-number {
+            font-size: 13px;
+            font-weight: 800;
+            color: #557a45;
+            margin-bottom: 45px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #68716b;
+            font-size: 15px;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 500px;
+            background:
+                url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85")
+                center/cover;
+        }
+
+        .about-text h2 {
+            font-size: clamp(34px, 5vw, 50px);
+            line-height: 1.05;
+            letter-spacing: -1.5px;
+            margin-bottom: 22px;
+        }
+
+        .about-text p {
+            color: #68716b;
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .check-list li {
+            padding: 11px 0;
+            border-bottom: 1px solid #dde1dc;
+            font-weight: 600;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #557a45;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        /* PROJECT SECTION */
+
+        .project-section {
+            background: #202522;
+            color: white;
+        }
+
+        .project-section .section-heading p {
+            color: #bdc4bf;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 18px;
+        }
+
+        .project-card {
+            min-height: 360px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent 35%, rgba(0,0,0,0.8));
+        }
+
+        .project-card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card h3 {
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .project-card p {
+            color: #e1e4e1;
+            font-size: 14px;
+        }
+
+        .project-one {
+            background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85");
+        }
+
+        .project-two {
+            background-image: url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85");
+        }
+
+        /* PROCESS */
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-item {
+            border-top: 3px solid #557a45;
+            padding-top: 22px;
+        }
+
+        .process-item span {
+            font-size: 13px;
+            color: #557a45;
+            font-weight: 800;
+        }
+
+        .process-item h3 {
+            margin: 12px 0 8px;
+            font-size: 20px;
+        }
+
+        .process-item p {
+            color: #68716b;
+            font-size: 14px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #dfe7da;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 18px;
+        }
+
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #59625c;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+        }
+
+        .contact-info h2 {
+            font-size: 42px;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .contact-info > p {
+            color: #68716b;
+            margin-bottom: 35px;
+        }
+
+        .contact-detail {
+            margin-bottom: 22px;
+        }
+
+        .contact-detail small {
+            display: block;
+            color: #557a45;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+        }
+
+        .contact-detail strong {
+            font-size: 17px;
+        }
+
+        .form-box {
+            background: #f5f6f3;
+            padding: 35px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d7dbd6;
+            background: white;
+            font-family: inherit;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            background: #557a45;
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 3px;
+        }
+
+        .submit-button:hover {
+            background: #466638;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #202522;
+            color: #c7cdc9;
+            padding: 35px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .footer-logo {
+            color: white;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .footer-logo span {
+            color: #7fa96a;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image {
+                height: 350px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .topbar-inner {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero {
+                min-height: 580px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .form-box {
+                padding: 22px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>Perth, Western Australia</span>
+            <span>Roofing & Exterior Maintenance</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="container nav-inner">
+
+            <a href="#" class="logo">
+                Perth Roof <span>&</span> Exterior
+            </a>
+
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#process">Process</a>
+                <a href="#contact" class="nav-button">Request a Quote</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Perth Roof & Exterior Maintenance
+                </div>
+
+                <h1>
+                    Look after your property from the top down.
+                </h1>
+
+                <p>
+                    Professional roof and exterior maintenance for residential
+                    and property owners across Perth. Keep your property clean,
+                    maintained and looking its best.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="button button-primary">
+                        Request a Quote
+                    </a>
+
+                    <a href="#services" class="button button-light">
+                        View Services
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INTRO STRIP -->
+
+    <div class="intro-strip">
+
+        <div class="container intro-grid">
+
+            <div class="intro-item">
+                <strong>Roof Maintenance</strong>
+                <span>Help protect and maintain your roof.</span>
+            </div>
+
+            <div class="intro-item">
+                <strong>Exterior Maintenance</strong>
+                <span>Keep external areas clean and maintained.</span>
+            </div>
+
+            <div class="intro-item">
+                <strong>Perth Service</strong>
+                <span>Serving customers across the Perth area.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SERVICES -->
+
+    <section class="services" id="services">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">What We Do</div>
+
+                <h2>
+                    Practical maintenance for your property.
+                </h2>
+
+                <p>
+                    From roof care to exterior cleaning, our services are
+                    designed to help keep your property maintained.
+                </p>
+
+            </div>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <h3>Roof Maintenance</h3>
+                    <p>
+                        General roof maintenance and upkeep to help keep
+                        your roof in good condition.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <h3>Roof Cleaning</h3>
+                    <p>
+                        Exterior roof cleaning to improve the appearance
+                        and general presentation of your property.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <h3>Gutter Cleaning</h3>
+                    <p>
+                        Gutter cleaning and maintenance to help keep
+                        rainwater drainage areas clear.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <h3>Pressure Cleaning</h3>
+                    <p>
+                        Cleaning of suitable exterior surfaces to remove
+                        built-up dirt and grime.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">05</div>
+                    <h3>Exterior Cleaning</h3>
+                    <p>
+                        Exterior cleaning for areas around homes and
+                        properties that need freshening up.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">06</div>
+                    <h3>Property Maintenance</h3>
+                    <p>
+                        General exterior maintenance services tailored
+                        to the needs of your property.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image"></div>
+
+            <div class="about-text">
+
+                <div class="section-heading">
+                    <div class="small-title">About The Business</div>
+
+                    <h2>
+                        Maintenance that keeps your property looking its best.
+                    </h2>
+                </div>
+
+                <p>
+                    Perth Roof & Exterior Maintenance provides roof and
+                    exterior maintenance services for properties across Perth.
+                </p>
+
+                <p>
+                    Whether your property needs regular upkeep, exterior
+                    cleaning or attention to specific areas, we can help
+                    identify the work required and provide a suitable service.
+                </p>
+
+                <ul class="check-list">
+                    <li>Roof and exterior maintenance</li>
+                    <li>Residential property services</li>
+                    <li>Clear communication</li>
+                    <li>Quote-based service</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="project-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">Exterior Work</div>
+
+                <h2>
+                    From roofs to the rest of the property.
+                </h2>
+
+                <p>
+                    Exterior maintenance can make a noticeable difference
+                    to the presentation and upkeep of a property.
+                </p>
+
+            </div>
+
+            <div class="project-grid">
+
+                <div class="project-card project-one">
+
+                    <div class="project-card-content">
+                        <h3>Roof & Exterior Care</h3>
+                        <p>
+                            Maintenance focused on keeping external areas
+                            clean and looked after.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="project-card project-two">
+
+                    <div class="project-card-content">
+                        <h3>Property Maintenance</h3>
+                        <p>
+                            Services tailored around the needs of the property.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROCESS -->
+
+    <section id="process">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="small-title">How It Works</div>
+
+                <h2>
+                    A simple process from enquiry to completion.
+                </h2>
+
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-item">
+                    <span>01 — ENQUIRE</span>
+                    <h3>Get in touch</h3>
+                    <p>
+                        Tell us what your property needs and provide
+                        some basic details.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <span>02 — ASSESS</span>
+                    <h3>Discuss the work</h3>
+                    <p>
+                        We can discuss the areas that need attention
+                        and the service required.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <span>03 — QUOTE</span>
+                    <h3>Receive a quote</h3>
+                    <p>
+                        Get the relevant pricing and details for the
+                        requested work.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <span>04 — COMPLETE</span>
+                    <h3>Get the work done</h3>
+                    <p>
+                        Once approved, the agreed maintenance work
+                        can be completed.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Need your property maintained?
+            </h2>
+
+            <p>
+                Get in touch to discuss your roofing or exterior
+                maintenance requirements.
+            </p>
+
+            <a href="#contact" class="button button-primary">
+                Request a Quote
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="container contact-grid">
+
+            <div class="contact-info">
+
+                <div class="section-heading">
+
+                    <div class="small-title">Contact</div>
+
+                    <h2>
+                        Let's talk about your property.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Send through your details and a description of the
+                    work you need. The business can then follow up
+                    regarding your enquiry.
+                </p>
+
+                <div class="contact-detail">
+                    <small>Phone</small>
+                    <strong>0400 000 000</strong>
+                </div>
+
+                <div class="contact-detail">
+                    <small>Email</small>
+                    <strong>info@example.com</strong>
+                </div>
+
+                <div class="contact-detail">
+                    <small>Service Area</small>
+                    <strong>Perth, Western Australia</strong>
+                </div>
+
+            </div>
+
+            <div class="form-box">
+
+                <!--
+                IMPORTANT:
+                Replace YOUR-FORMSPREE-ENDPOINT with the Formspree
+                endpoint for this business.
+                Example:
+                https://formspree.io/f/xxxxxxxx
+                -->
+
+                <form action="YOUR-FORMSPREE-ENDPOINT" method="POST">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Your phone number"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your email address"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="service">What do you need?</label>
+
+                        <select id="service" name="service" required>
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="Roof Maintenance">
+                                Roof Maintenance
+                            </option>
+
+                            <option value="Roof Cleaning">
+                                Roof Cleaning
+                            </option>
+
+                            <option value="Gutter Cleaning">
+                                Gutter Cleaning
+                            </option>
+
+                            <option value="Pressure Cleaning">
+                                Pressure Cleaning
+                            </option>
+
+                            <option value="Exterior Cleaning">
+                                Exterior Cleaning
+                            </option>
+
+                            <option value="Property Maintenance">
+                                Property Maintenance
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">Tell us about the job</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us what you need help with..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Send Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div class="footer-logo">
+                Perth Roof <span>&</span> Exterior Maintenance
+            </div>
+
+            <p>
+                © 2026 Perth Roof & Exterior Maintenance. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
